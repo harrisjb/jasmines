@@ -8,9 +8,9 @@
 #' @export
 unfold_worley <- function(data, scatter = FALSE, output = "order", ...) {
   if(scatter == TRUE) {
-    data[[output]] <- ambient::gen_worley(data$x, data$y, ...)
+    data[[output]] <- ambient::genworley(data$x, data$y, ...)
   } else {
-    data[[output]] <- ambient::gen_worley(data$x, data$y, seed = data$seed[1], ...)
+    data[[output]] <- ambient::genworley(data$x, data$y, seed = data$seed[1], ...)
   }
   return(data)
 }
