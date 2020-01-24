@@ -38,8 +38,8 @@ unfold_slice <- function(
 
   for(i in 2:iterations) {
 
-    x <- state$x + ambient::gen_worley(state$x, state$y, seed = seed_x, value = "cell") * scale
-    y <- state$y + ambient::gen_worley(state$y, state$x, seed = seed_y, value = "cell") * scale
+    x <- state$x + ambient::genworley(state$x, state$y, seed = seed_x, value = "cell") * scale
+    y <- state$y + ambient::genworley(state$y, state$x, seed = seed_y, value = "cell") * scale
 
     state$x <- x
     state$y <- y
